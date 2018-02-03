@@ -1,0 +1,69 @@
+From Interactive Console
+run import os
+
+Get Current Directory-	os.getcwd()
+List Current Directory-	os.listdir()
+List Different Directory-	os.listdir("/var/log")
+Make a Directory-		os.mkdir("Test")
+Go to Directory-		os.chdir("Test")
+__________________________________________________________________________
+For Loop-
+import os
+for dirpath, dirnames, filenames in os.walk(os.getcwd(), topdown="true"):
+<insert 4 spaces or a tab> print(dirpath, filenames)
+__________________________________________________________________________
+Multiple For Loops-
+import os
+for dirpath, dirnames, filenames in os.walk(os.getcwd(), topdown="true"):
+<insert 4 spaces or a tab> for filename in filenames:
+<insert 8 spaces or 2 tabs> print(dirpath, filename)
+__________________________________________________________________________
+Create and Open File-	file = open("/user/test.txt", "w")
+Write to File-			file.write("This is a test!")
+Close File-				file.close()
+Empty File Handler-		file = None
+Read File-				file = open("/user/test.txt", "r")
+						file.read()
+__________________________________________________________________________
+File Existence Check-
+import os
+if os.path.exists("/user/test.txt"):
+<insert 4 spaces or a tab> print("Found it!")
+else:
+<insert 4 spaces or a tab> print("Not Found!")
+__________________________________________________________________________
+Is File Check-
+import os
+chk = "/user/test.txt"
+if os.path.isfile(chk):
+<insert 4 spaces or a tab> print("This is a file")
+else:
+<insert 4 spaces or a tab> print("This is not a file")
+__________________________________________________________________________
+Is Directory Check-
+import os
+chk = "/user"
+if os.path.isdir(chk):
+<insert 4 spaces or a tab> print("This is a directory")
+else:
+<insert 4 spaces or a tab> print("This is not a directory")
+__________________________________________________________________________
+Copy a File
+import shutil
+shutil.copy("/root/test.txt", "/root/Test/test.txt")
+__________________________________________________________________________
+Rename a File
+os.rename("/root/test.txt", "/root/test2.txt")
+
+Move a File
+shutil.move("/root/test.txt", "/root/Test/test.txt")
+
+Remove a FIle
+os.remove("/root/test.txt")
+
+Remove a Directory
+os.removedirs("/root/Test")
+
+
+
+

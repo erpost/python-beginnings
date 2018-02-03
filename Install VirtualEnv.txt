@@ -1,0 +1,6 @@
+# CentOS
+
+sudo pip3 install virtualenv
+virtualenv venv --python=python3.6 
+source venv/bin/activate
+deactivate

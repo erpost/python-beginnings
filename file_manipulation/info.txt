@@ -1,0 +1,16 @@
+handle holds the file "object"
+
+handle = open(filename, mode)
+
+modes (optional):
+
+r - read
+w - write
+
+example: fhand = open('mbox.txt', 'r')
+
+how to print out file using handle
+
+xfile = open('mbox.txt')
+for line in xfile:
+    print(line)
