@@ -1,0 +1,42 @@
+{
+  "tenant_admins" : [ {
+    "is_user" : true,
+    "id" : "id-1",
+    "user_id" : "P000216",
+    "email" : "test1@test.com",
+    "first_name" : "Test",
+    "last_name" : "One",
+    "display_name" : "Test One",
+    "status" : "active",
+    "roles" : {
+      "manage_access" : true,
+      "manage_idp" : true
+    }
+  }, {
+    "is_user" : false,
+    "id" : "id-2",
+    "user_id" : "P000218",
+    "email" : "test2@test.com",
+    "first_name" : "Test",
+    "last_name" : "Two",
+    "display_name" : "Test Two",
+    "status" : "active",
+    "roles" : {
+      "manage_access" : true,
+      "manage_idp" : true
+    }
+  }, {
+    "is_user" : true,
+    "id" : "id-3",
+    "user_id" : "P000230",
+    "email" : "test3@test.com",
+    "first_name" : "Test",
+    "last_name" : "Three",
+    "display_name" : "Test Three",
+    "status" : "active",
+    "roles" : {
+      "manage_access" : true,
+      "manage_idp" : true
+    }
+  } ]
+}
